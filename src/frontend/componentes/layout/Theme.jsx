@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import {Header} from './Header'
-import {Footer} from './Footer'
+import { HeaderContenedores } from "./contenedores/Header-contenedores";
+import { Footer } from "./componentes/Footer";
 
-export const Theme = ({children}) => {
-    return (
-        <>
-            <Header />
-            <div className="contenedor">
-                {children}
-            </div>
-            <Footer />
-        </>
-    )
-}
+export const Theme = ({ children }) => {
+  return (
+    <>
+      <HeaderContenedores />
+      <div className="contenedor">{children}</div>
+      <Footer />
+    </>
+  );
+};
